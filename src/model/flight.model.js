@@ -2,16 +2,13 @@ const mongoose = require("mongoose");
 
 const flightSchema = new mongoose.Schema(
     {
-img: {type:String, required:true},
-name: {type:String, required:true},    
-price: {type:Number, required:true},
-strikeprice: {type:Number, required:true},
-description: {type:String, required:true},
-off: {type:Number, required:true},
-rightimg: {type:String, required:false},
-frontimg: {type:String, required:false},
-halfimg: {type:String, required:false},
-backtimg: {type:String, required:false}
+        stime: { type: String, required: false },
+        etime: { type: String, required: false },
+        dest: { type: String, required: false },
+        pname: { type: String, required: false },
+        safe: { type: String, required: false },
+        price: { type: Number, required: false },
+time: {type:String, required:false},
     },
     {
         versionKey:false,
