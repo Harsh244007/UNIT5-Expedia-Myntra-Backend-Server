@@ -1,5 +1,8 @@
-const express = require('express');
-const app = express();
+let express = require('express');
+let app = express();
+let cors = require('cors')
+
+app.use(cors())
 
 const flightController = require("./controller/flight.controller");
 const hotelController = require("./controller/hotel.controller");
