@@ -25,5 +25,8 @@
     "heroku-git": "^2.5.23",
     "mongo": "^0.1.0",
     "mongoose": "^6.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
