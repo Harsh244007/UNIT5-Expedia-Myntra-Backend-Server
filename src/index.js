@@ -6,7 +6,7 @@ const { register, login } = require("./controller/auth");
 const passport = require("./config/google-auth");
 
 app.use(cors());
-app.use(exprss.json());
+app.use(express.json());
 
 const flightController = require("./controller/flight.controller");
 const hotelController = require("./controller/hotel.controller");
